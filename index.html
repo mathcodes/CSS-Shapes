@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatiedge">
+  <meta name="viewpth=device-width, initial-scale=1.0">
+  <!--    JQuery link        -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <!--    Bootstrap Links    -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--    CSS local link      -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Jon's Template</title>
+</head>
+
+<body>
+
+  <!-- CONTAINER -->
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-expand">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Shapes!</a>
+      </div>
+    </nav>
+    <div class="shape">
+      <h3>Square Shape</h3>
+      <div id="square"></div>
+      <style contenteditable="">
+        #square {
+          width: 100px;
+          height: 100px;
+          background: #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Rectangle Shape</h3>
+      <div id="rectangle"></div>
+      <style contenteditable="">
+        #rectangle {
+          width: 200px;
+          height: 100px;
+          background: #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Circle Shape</h3>
+      <div id="circle"></div>
+      <style contenteditable="">
+        #circle {
+          width: 100px;
+          height: 100px;
+          background: #d35400;
+          border-radius: 50%
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Oval Shape</h3>
+      <div id="oval"></div>
+      <style contenteditable="">
+        #oval {
+          width: 200px;
+          height: 100px;
+          background: #d35400;
+          border-radius: 100px / 50px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Up Shape</h3>
+      <div id="triangle-up"></div>
+      <style contenteditable="">
+        #triangle-up {
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 100px solid #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Down Shape</h3>
+      <div id="triangle-down"></div>
+      <style contenteditable="">
+        #triangle-down {
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-top: 100px solid #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Left Shape</h3>
+      <div id="triangle-left"></div>
+      <style contenteditable="">
+        #triangle-left {
+          width: 0;
+          height: 0;
+          border-top: 50px solid transparent;
+          border-right: 100px solid #d35400;
+          border-bottom: 50px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Right Shape</h3>
+      <div id="triangle-right"></div>
+      <style contenteditable="">
+        #triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 50px solid transparent;
+          border-left: 100px solid #d35400;
+          border-bottom: 50px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Top Left Shape</h3>
+      <div id="triangle-topleft">&nbsp;</div>
+      <style contenteditable="">
+        #triangle-topleft {
+          width: 0;
+          height: 0;
+          border-top: 100px solid #d35400;
+          border-right: 100px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Top Right Shape</h3>
+      <div id="triangle-topright">&nbsp;</div>
+      <style contenteditable="">
+        #triangle-topright {
+          width: 0;
+          height: 0;
+          border-top: 100px solid #d35400;
+          border-left: 100px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Bottom Left Shape</h3>
+      <div id="triangle-bottomleft">&nbsp;</div>
+      <style contenteditable="">
+        #triangle-bottomleft {
+          width: 0;
+          height: 0;
+          border-bottom: 100px solid #d35400;
+          border-right: 100px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Triangle Bottom Right Shape</h3>
+      <div id="triangle-bottomright"></div>
+      <style contenteditable="">
+        #triangle-bottomright {
+          width: 0;
+          height: 0;
+          border-bottom: 100px solid #d35400;
+          border-left: 100px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Curved Tail Arrow Shape</h3>
+      <div id="curvedarrow">&nbsp;</div>
+      <style contenteditable="">
+        #curvedarrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          border-top: 9px solid transparent;
+          border-right: 9px solid #d35400;
+          transform: rotate(10deg);
+        }
+
+        #curvedarrow:after {
+          content: "";
+          position: absolute;
+          border: 0 solid transparent;
+          border-top: 3px solid #d35400;
+          border-radius: 20px 0 0 0;
+          top: -12px;
+          left: -9px;
+          width: 12px;
+          height: 12px;
+          transform: rotate(45deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Trapezoid Shape</h3>
+      <div id="trapezoid"></div>
+      <style contenteditable="">
+        #trapezoid {
+          border-bottom: 100px solid #d35400;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          height: 0;
+          width: 100px;
+        }
+
+       
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Parallelogram Shape</h3>
+      <div id="parallelogram"></div>
+      <style contenteditable="">
+        #parallelogram {
+          width: 150px;
+          height: 100px;
+          transform: skew(20deg);
+          background: #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Star (6-points) Shape</h3>
+      <div id="star-six"></div>
+      <style contenteditable="">
+        #star-six {
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 100px solid #d35400;
+          position: relative;
+        }
+
+        #star-six:after {
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-top: 100px solid #d35400;
+          position: absolute;
+          content: "";
+          top: 30px;
+          left: -50px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Star (5-points) Shape</h3>
+      <div id="star-five">&nbsp;</div>
+      <style contenteditable="">
+        #star-five {
+          margin: 50px 0;
+          position: relative;
+          display: block;
+          color: #d35400;
+          width: 0px;
+          height: 0px;
+          border-right: 100px solid transparent;
+          border-bottom: 70px solid #d35400;
+          border-left: 100px solid transparent;
+          transform: rotate(35deg);
+        }
+
+        #star-five:before {
+          border-bottom: 80px solid #d35400;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          position: absolute;
+          height: 0;
+          width: 0;
+          top: -45px;
+          left: -65px;
+          display: block;
+          content: '';
+          transform: rotate(-35deg);
+        }
+
+        #star-five:after {
+          position: absolute;
+          display: block;
+          color: #d35400;
+          top: 3px;
+          left: -105px;
+          width: 0px;
+          height: 0px;
+          border-right: 100px solid transparent;
+          border-bottom: 70px solid #d35400;
+          border-left: 100px solid transparent;
+          transform: rotate(-70deg);
+          content: '';
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Pentagon Shape</h3>
+      <div id="pentagon">&nbsp;</div>
+      <style contenteditable="">
+        #pentagon {
+          position: relative;
+          width: 54px;
+          box-sizing: content-box;
+          border-width: 50px 18px 0;
+          border-style: solid;
+          border-color: #d35400 transparent;
+        }
+
+        #pentagon:before {
+          content: "";
+          position: absolute;
+          height: 0;
+          width: 0;
+          top: -85px;
+          left: -18px;
+          border-width: 0 45px 35px;
+          border-style: solid;
+          border-color: transparent transparent #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Hexagon Shape</h3>
+      <div id="hexagon">&nbsp;</div>
+      <style contenteditable="">
+        #hexagon {
+          width: 100px;
+          height: 57.735px;
+          background: #d35400;
+          position: relative;
+        }
+
+        #hexagon::before {
+          content: "";
+          position: absolute;
+          top: -28.8675px;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 28.8675px solid #d35400;
+        }
+
+        #hexagon::after {
+          content: "";
+          position: absolute;
+          bottom: -28.8675px;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-top: 28.8675px solid #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Octagon Shape</h3>
+      <div id="octagon">&nbsp;</div>
+      <style contenteditable="">
+        #octagon {
+          width: 100px;
+          height: 100px;
+          background: #d35400;
+          position: relative;
+        }
+
+        #octagon:before {
+          content: "";
+          width: 100px;
+          height: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-bottom: 29px solid #d35400;
+          border-left: 29px solid #eee;
+          border-right: 29px solid #eee;
+        }
+
+        #octagon:after {
+          content: "";
+          width: 100px;
+          height: 0;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-top: 29px solid #d35400;
+          border-left: 29px solid #eee;
+          border-right: 29px solid #eee;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Heart Shape</h3>
+      <div id="heart">&nbsp;</div>
+      <style contenteditable="">
+        #heart {
+          position: relative;
+          width: 100px;
+          height: 90px;
+        }
+
+        #heart:before,
+        #heart:after {
+          position: absolute;
+          content: "";
+          left: 50px;
+          top: 0;
+          width: 50px;
+          height: 80px;
+          background: #d35400;
+          border-radius: 50px 50px 0 0;
+          transform: rotate(-45deg);
+          transform-origin: 0 100%;
+        }
+
+        #heart:after {
+          left: 0;
+          transform: rotate(45deg);
+          transform-origin: 100% 100%;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Infinity Shape</h3>
+      <div id="infinity">&nbsp;</div>
+      <style contenteditable="">
+        #infinity {
+          position: relative;
+          width: 212px;
+          height: 100px;
+          box-sizing: content-box;
+        }
+
+        #infinity:before,
+        #infinity:after {
+          content: "";
+          box-sizing: content-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 60px;
+          height: 60px;
+          border: 20px solid #d35400;
+          border-radius: 50px 50px 0 50px;
+          transform: rotate(-45deg);
+        }
+
+        #infinity:after {
+          left: auto;
+          right: 0;
+          border-radius: 50px 50px 50px 0;
+          transform: rotate(45deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Diamond Square Shape</h3>
+      <div id="diamond">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #diamond {
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-bottom-color: #d35400;
+          position: relative;
+          top: -50px;
+        }
+
+        #diamond:after {
+          content: '';
+          position: absolute;
+          left: -50px;
+          top: 50px;
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-top-color: #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Diamond Shield Shape</h3>
+      <div id="diamond-shield">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #diamond-shield {
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-bottom: 20px solid #d35400;
+          position: relative;
+          top: -50px;
+        }
+
+        #diamond-shield:after {
+          content: '';
+          position: absolute;
+          left: -50px;
+          top: 20px;
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-top: 70px solid #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Diamond Narrow Shape </h3>
+      <div id="diamond-narrow"></div>
+      <style scoped="" contenteditable="">
+        #diamond-narrow {
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-bottom: 70px solid #d35400;
+          position: relative;
+          top: -50px;
+        }
+
+        #diamond-narrow:after {
+          content: '';
+          position: absolute;
+          left: -50px;
+          top: 70px;
+          width: 0;
+          height: 0;
+          border: 50px solid transparent;
+          border-top: 70px solid #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Cut Diamond Shape</h3>
+      <div id="cut-diamond">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #cut-diamond {
+          border-style: solid;
+          border-color: transparent transparent #d35400 transparent;
+          border-width: 0 25px 25px 25px;
+          height: 0;
+          width: 50px;
+          box-sizing: content-box;
+          position: relative;
+          margin: 20px 0 50px 0;
+        }
+
+        #cut-diamond:after {
+          content: "";
+          position: absolute;
+          top: 25px;
+          left: -25px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-color: #d35400 transparent transparent transparent;
+          border-width: 70px 50px 0 50px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Egg</h3>
+      <div id="egg">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #egg {
+          display: block;
+          width: 126px;
+          height: 180px;
+          background-color: #d35400;
+          border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Pac-Man Shape</h3>
+      <div id="pacman">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #pacman {
+          width: 0px;
+          height: 0px;
+          border-right: 60px solid transparent;
+          border-top: 60px solid #d35400;
+          border-left: 60px solid #d35400;
+          border-bottom: 60px solid #d35400;
+          border-top-left-radius: 60px;
+          border-top-right-radius: 60px;
+          border-bottom-left-radius: 60px;
+          border-bottom-right-radius: 60px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Talk Bubble Shape</h3>
+      <div id="talkbubble"></div>
+      <style scoped="" contenteditable="">
+        #talkbubble {
+          width: 120px;
+          height: 80px;
+          background: #d35400;
+          position: relative;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+
+        #talkbubble:before {
+          content: "";
+          position: absolute;
+          right: 100%;
+          top: 26px;
+          width: 0;
+          height: 0;
+          border-top: 13px solid transparent;
+          border-right: 26px solid #d35400;
+          border-bottom: 13px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>RSS Feed</a>
+      </h3>
+      <div id="rss">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #rss {
+          width: 20em;
+          height: 20em;
+          border-radius: 3em;
+          background-color: #d35400;
+          font-size: 14px;
+        }
+
+        #rss:before {
+          content: '';
+          z-index: 1;
+          display: block;
+          height: 5em;
+          width: 5em;
+          background: #fff;
+          border-radius: 50%;
+          position: relative;
+          top: 11.5em;
+          left: 3.5em;
+        }
+
+        #rss:after {
+          content: '';
+          display: block;
+          background: #d35400;
+          width: 13em;
+          height: 13em;
+          top: -2em;
+          left: 3.8em;
+          border-radius: 2.5em;
+          position: relative;
+          box-shadow:
+            -2em 2em 0 0 #fff inset,
+            -4em 4em 0 0 #d35400 inset,
+            -6em 6em 0 0 #fff inset
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>12 Point Burst Shape</h3>
+      <div id="burst-12">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #burst-12 {
+          background: #d35400;
+          width: 80px;
+          height: 80px;
+          position: relative;
+          text-align: center;
+        }
+
+        #burst-12:before,
+        #burst-12:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 80px;
+          width: 80px;
+          background: #d35400;
+        }
+
+        #burst-12:before {
+          transform: rotate(30deg);
+        }
+
+        #burst-12:after {
+          transform: rotate(60deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>8 Point Burst Shape </h3>
+      <div id="burst-8">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #burst-8 {
+          background: #d35400;
+          width: 80px;
+          height: 80px;
+          position: relative;
+          text-align: center;
+          transform: rotate(20deg);
+        }
+
+        #burst-8:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 80px;
+          width: 80px;
+          background: #d35400;
+          transform: rotate(135deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Yin Yang Shape</h3>
+      <div id="yin-yang">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #yin-yang {
+          width: 96px;
+          box-sizing: content-box;
+          height: 48px;
+          background: #eee;
+          border-color: #d35400;
+          border-style: solid;
+          border-width: 2px 2px 50px 2px;
+          border-radius: 100%;
+          position: relative;
+        }
+
+        #yin-yang:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          background: #eee;
+          border: 18px solid #d35400;
+          border-radius: 100%;
+          width: 12px;
+          height: 12px;
+          box-sizing: content-box;
+        }
+
+        #yin-yang:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: #d35400;
+          border: 18px solid #eee;
+          border-radius: 100%;
+          width: 12px;
+          height: 12px;
+          box-sizing: content-box;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Badge Ribbon Shape </h3>
+      <div id="badge-ribbon">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #badge-ribbon {
+          position: relative;
+          background: #d35400;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+        }
+
+        #badge-ribbon:before,
+        #badge-ribbon:after {
+          content: '';
+          position: absolute;
+          border-bottom: 70px solid #d35400;
+          border-left: 40px solid transparent;
+          border-right: 40px solid transparent;
+          top: 70px;
+          left: -10px;
+          transform: rotate(-140deg);
+        }
+
+        #badge-ribbon:after {
+          left: auto;
+          right: -10px;
+          transform: rotate(140deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Space Invader Shape </h3>
+      <div id="space-invader">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #space-invader {
+          box-shadow: 0 0 0 1em #d35400,
+            0 1em 0 1em #d35400,
+            -2.5em 1.5em 0 .5em #d35400,
+            2.5em 1.5em 0 .5em #d35400,
+            -3em -3em 0 0 #d35400,
+            3em -3em 0 0 #d35400,
+            -2em -2em 0 0 #d35400,
+            2em -2em 0 0 #d35400,
+            -3em -1em 0 0 #d35400,
+            -2em -1em 0 0 #d35400,
+            2em -1em 0 0 #d35400,
+            3em -1em 0 0 #d35400,
+            -4em 0 0 0 #d35400,
+            -3em 0 0 0 #d35400,
+            3em 0 0 0 #d35400,
+            4em 0 0 0 #d35400,
+            -5em 1em 0 0 #d35400,
+            -4em 1em 0 0 #d35400,
+            4em 1em 0 0 #d35400,
+            5em 1em 0 0 #d35400,
+            -5em 2em 0 0 #d35400,
+            5em 2em 0 0 #d35400,
+            -5em 3em 0 0 #d35400,
+            -3em 3em 0 0 #d35400,
+            3em 3em 0 0 #d35400,
+            5em 3em 0 0 #d35400,
+            -2em 4em 0 0 #d35400,
+            -1em 4em 0 0 #d35400,
+            1em 4em 0 0 #d35400,
+            2em 4em 0 0 #d35400;
+          background: #d35400;
+          width: 1em;
+          height: 1em;
+          overflow: hidden;
+          margin: 50px 0 70px 65px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>TV Screen Shape</h3>
+      <div id="tv"></div>
+      <style scoped="" contenteditable="">
+        #tv {
+          position: relative;
+          width: 200px;
+          height: 150px;
+          margin: 20px 0;
+          background: #d35400;
+          border-radius: 50% / 10%;
+          color: white;
+          text-align: center;
+          text-indent: .1em;
+        }
+
+        #tv:before {
+          content: '';
+          position: absolute;
+          top: 10%;
+          bottom: 10%;
+          right: -5%;
+          left: -5%;
+          background: inherit;
+          border-radius: 5% / 50%;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Chevron Shape </h3>
+      <div id="chevron">&nbsp;</div>
+      <style scoped="" contenteditable="">
+        #chevron {
+          position: relative;
+          text-align: center;
+          padding: 12px;
+          margin-bottom: 6px;
+          height: 60px;
+          width: 200px;
+        }
+
+        #chevron:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 51%;
+          background: #d35400;
+          transform: skew(0deg, 6deg);
+        }
+
+        #chevron:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 50%;
+          background: #d35400;
+          transform: skew(0deg, -6deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Magnifying Glass Shape</h3>
+      <div id="magnifying-glass">&nbsp;</div>
+      <style contenteditable="">
+        #magnifying-glass {
+          font-size: 10em;
+          display: inline-block;
+          width: 0.4em;
+          box-sizing: content-box;
+          height: 0.4em;
+          border: 0.1em solid #d35400;
+          position: relative;
+          border-radius: 0.35em;
+        }
+
+        #magnifying-glass:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          right: -0.25em;
+          bottom: -0.1em;
+          border-width: 0;
+          background: #d35400;
+          width: 0.35em;
+          height: 0.08em;
+          transform: rotate(45deg);
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Facebook Icon Shape</h3>
+      <div id="facebook-icon">&nbsp;</div>
+      <style contenteditable="">
+        #facebook-icon {
+          background: #d35400;
+          text-indent: -999em;
+          width: 100px;
+          height: 110px;
+          box-sizing: content-box;
+          border-radius: 5px;
+          position: relative;
+          overflow: hidden;
+          border: 15px solid #d35400;
+          border-bottom: 0;
+        }
+
+        #facebook-icon:before {
+          content: "/20";
+          position: absolute;
+          background: #d35400;
+          width: 40px;
+          height: 90px;
+          bottom: -30px;
+          right: -37px;
+          border: 20px solid #eee;
+          border-radius: 25px;
+          box-sizing: content-box;
+        }
+
+        #facebook-icon:after {
+          content: "/20";
+          position: absolute;
+          width: 55px;
+          top: 50px;
+          height: 20px;
+          background: #eee;
+          right: 5px;
+          box-sizing: content-box;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Moon Shape</h3>
+      <div id="moon">&nbsp;</div>
+      <style contenteditable="">
+        #moon {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          box-shadow: 15px 15px 0 0 #d35400;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Flag Shape</h3>
+      <div id="flag"></div>
+      <style contenteditable="">
+        #flag {
+          width: 110px;
+          height: 56px;
+          box-sizing: content-box;
+          padding-top: 15px;
+          position: relative;
+          background: #d35400;
+          color: white;
+          font-size: 11px;
+          letter-spacing: 0.2em;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        #flag:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-bottom: 13px solid #eee;
+          border-left: 55px solid transparent;
+          border-right: 55px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Cone Shape </h3>
+      <div id="cone">&nbsp;</div>
+      <style contenteditable="">
+        #cone {
+          width: 0;
+          height: 0;
+          border-left: 70px solid transparent;
+          border-right: 70px solid transparent;
+          border-top: 100px solid #d35400;
+          border-radius: 50%;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Cross Shape</h3>
+      <div id="cross"></div>
+      <style contenteditable="">
+        #cross {
+          background: #d35400;
+          height: 100px;
+          position: relative;
+          width: 20px;
+        }
+
+        #cross:after {
+          background: #d35400;
+          content: "";
+          height: 20px;
+          left: -40px;
+          position: absolute;
+          top: 40px;
+          width: 100px;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Base </h3>
+      <div id="base"></div>
+      <style contenteditable="">
+        #base {
+          background: #d35400;
+          display: inline-block;
+          height: 55px;
+          margin-left: 20px;
+          margin-top: 55px;
+          position: relative;
+          width: 100px;
+        }
+
+        #base:before {
+          border-bottom: 35px solid #d35400;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          content: "";
+          height: 0;
+          left: 0;
+          position: absolute;
+          top: -35px;
+          width: 0;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Pointer </h3>
+      <div id="pointer"></div>
+      <style contenteditable="">
+        #pointer {
+          width: 200px;
+          height: 40px;
+          position: relative;
+          background: #d35400;
+        }
+
+        #pointer:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-left: 20px solid white;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+
+        #pointer:before {
+          content: "";
+          position: absolute;
+          right: -20px;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-left: 20px solid #d35400;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+        }
+      </style>
+    </div>
+
+    <div class="shape">
+      <h3>Lock Shape</h3>
+      <div id="lock"></div>
+      <style contenteditable="">
+        #lock {
+          font-size: 8px;
+          position: relative;
+          width: 18em;
+          height: 13em;
+          border-radius: 2em;
+          top: 10em;
+          box-sizing: border-box;
+          border: 3.5em solid #d35400;
+          border-right-width: 7.5em;
+          border-left-width: 7.5em;
+          margin: 0 0 6rem 0;
+        }
+
+        #lock:before {
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          border: 2.5em solid #d35400;
+          width: 14em;
+          height: 12em;
+          left: 50%;
+          margin-left: -7em;
+          top: -12em;
+          border-top-left-radius: 7em;
+          border-top-right-radius: 7em;
+        }
+
+        #lock:after {
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          border: 1em solid #d35400;
+          width: 5em;
+          height: 8em;
+          border-radius: 2.5em;
+          left: 50%;
+          top: -1em;
+          margin-left: -2.5em;
+        }
+      </style>
+    </div>
+
+  </div>
+
+  <!--    JS local link       -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
